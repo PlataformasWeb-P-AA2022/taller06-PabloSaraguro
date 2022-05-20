@@ -22,6 +22,7 @@ class Pais(Base):
     dial = Column(String)
     geoname = Column(String)
     itu = Column(String)
+    lenguaje = Column(String)
     independiente = Column(String)
 
 def __repr__(self):
@@ -33,6 +34,7 @@ def __repr__(self):
                           self.dial,
                           self.geoname,
                           self.itu,
+                          self.lenguaje,
                           self.independiente)
 
 Base.metadata.create_all(engine)

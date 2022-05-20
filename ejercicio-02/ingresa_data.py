@@ -31,7 +31,7 @@ for d in datos:
     print(d)
     print(len(d.keys()))
     p = Pais(pais=d['CLDR display name'], capital=d['Capital'], continente=d['Continent'], \
-            dial=d['Dial'], geoname=d['Geoname ID'], itu=d['ITU'], independiente=d['is_independent'])
+            dial=d['Dial'], geoname=d['Geoname ID'], itu=d['ITU'], lenguaje=d['Languages'], independiente=d['is_independent'])
     session.add(p)
 
 # confirmar transacciones
